@@ -2,20 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* ----- VARIABLES ----- */
-:root{
-    --body-color: rgb(250, 250, 250);
+:root {
+    /* Dark theme colors */
+    --body-color: rgba(0, 0, 0, 0.87); /* Dark background color */
     --color-white: rgb(255, 255, 255);
 
-    --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(30, 159, 171);
-
+    --text-color-second: rgb(200, 200, 200); /* Lighter text for dark theme */
+    --text-color-third: rgb(30, 159, 171); /* You can leave this or change it */
+    
+    /* Modify other colors if needed */
     --first-color: rgb(110, 87, 224);
     --first-color-hover: rgb(40, 91, 212);
 
     --second-color: rgb(0, 201, 255);
     --third-color: rgb(192, 166, 49);
-    --first-shadow-color: rgba(0, 0, 0, 0.1);
-
+    --first-shadow-color: rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
 }
 
 /* ----- BASE ----- */
@@ -71,6 +72,7 @@ html{
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
     font-size: 16px;
+    color: #efefef;
 }
 
 /* ------- BASE -------- */
@@ -133,7 +135,7 @@ nav{
 }
 .active-link{
     position: relative;
-    color: var(--first-color);
+    color: white;
     transition: .3;
 }
 .active-link::after{
@@ -144,7 +146,7 @@ nav{
     transform: translate(-50%, -50%);
     width: 5px;
     height: 5px;
-    background: var(--first-color);
+    background: white;
     border-radius: 50%;
 }
 
@@ -218,7 +220,7 @@ nav{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 5px 0px rgba(255, 255, 255, 0.211);
     cursor: pointer;
 }
 .icon:hover{
@@ -264,7 +266,7 @@ nav{
    height: 50px;
    gap: 5px;
    text-decoration: none;
-   color: var(--text-color-second);
+   color: black;
    background: var(--color-white);
    border-radius: 30px;
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
@@ -317,8 +319,8 @@ h3{
     padding-block: 30px 70px;
     padding-inline: 20px;
     width: 100%;
-    background: var(--color-white);
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    background: rgba(0, 0, 0, 0.34);
+    box-shadow: 1px 8px 10px 2px rgba(255, 255, 255, 0.064);
     border-radius: 20px;
 }
 .about-info p{
@@ -404,6 +406,7 @@ h3{
 }
 .project-box:hover.project-box i,
 .project-box:hover.project-box>h3,
+.project-box:hover.project-box>a,
 .project-box:hover.project-box>label{
     color: var(--color-white);
     z-index: 2;
@@ -501,7 +504,7 @@ footer{
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
-    background: #F8F8F8;
+    background: #000000;
     padding-block: 40px 60px;
 }
 .top-footer p{
@@ -610,6 +613,7 @@ footer{
     }
     .about-info, .contact-info{
         width: 100%;
+        background-color: black;
     }
     .project-container{
         justify-content: center;
