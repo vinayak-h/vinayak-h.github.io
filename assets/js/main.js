@@ -39,11 +39,11 @@ var typingEffect = new Typed(".typedText", {
 
 /* ----- EMAILJS CONTACT FORM ----- */
 window.onload = function () {
-  emailjs.init("kuy1rPZubShWEaBuR"); 
+  emailjs.init("kuy1rPZubShWEaBuR"); // Initialize with your EmailJS Public Key
 };
 
 document.getElementById("contact-form").addEventListener("submit", function (event) {
-  event.preventDefault();
+  event.preventDefault(); // Prevent default form submission
 
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
@@ -55,17 +55,18 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
     message: message,
   };
 
+  // Send the email using EmailJS
   emailjs.send("service_zwnd4k5", "template_0hywsfz", templateParams)
     .then(function (response) {
       console.log("Message sent successfully", response);
       alert("Your message has been sent!");
+      // Clear the form fields after successful submission
+      document.getElementById("contact-form").reset();
     }, function (error) {
       console.error("Error sending message", error);
       alert("There was an error sending your message. Please try again.");
     });
 });
-
-
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
 const sr = ScrollReveal({
