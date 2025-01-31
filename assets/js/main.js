@@ -37,6 +37,36 @@ var typingEffect = new Typed(".typedText", {
   backDelay: 2000,
 });
 
+/* ----- EMAILJS CONTACT FORM ----- */
+window.onload = function () {
+  emailjs.init("kuy1rPZubShWEaBuR"); 
+};
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  var templateParams = {
+    from_name: name,
+    from_email: email,
+    message: message,
+  };
+
+  emailjs.send("service_zwnd4k5", "template_0hywsfz", templateParams)
+    .then(function (response) {
+      console.log("Message sent successfully", response);
+      alert("Your message has been sent!");
+    }, function (error) {
+      console.error("Error sending message", error);
+      alert("There was an error sending your message. Please try again.");
+    });
+});
+
+
+
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
 const sr = ScrollReveal({
   origin: "top",
