@@ -215,18 +215,23 @@ nav{
     margin-top: 5em;
     gap: 30px;
 }
-.icon{
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0px 2px 5px 0px rgba(255, 255, 255, 0.211);
+    width: 50px; /* Adjust size */
+    height: 50px; /* Adjust size */
+    background: var(--text-color-third); /* Accent color background */
+    color: var(--color-white); /* Icon color */
+    border-radius: 50%; /* Round background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.icon:hover{
-    color: var(--first-color);
+
+.icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 /* ----- FEATURED IMAGE BOX ----- */
