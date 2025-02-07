@@ -73,7 +73,7 @@ html{
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
     font-size: 16px;
-    color: #efefef;
+    color: var(--text-color-second);
 }
 
 /* ------- BASE -------- */
@@ -94,7 +94,7 @@ nav{
     width: 100%;
     height: 90px;
     line-height: 90px;
-    background: var(--body-color);
+    background: #00c9ff;
     padding-inline: 9vw;
     transition: .3s;
     z-index: 100;
@@ -506,7 +506,7 @@ footer{
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
-    background: #000000;
+    background: #00c9ff;
     padding-block: 40px 60px;
 }
 .top-footer p{
