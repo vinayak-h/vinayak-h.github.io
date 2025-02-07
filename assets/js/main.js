@@ -9,6 +9,11 @@ function myMenuFunction() {
   }
 }
 
+/* ----- Body blurry effect ----- */
+document.addEventListener("DOMContentLoaded", function () {
+  document.body.classList.add("blurry");
+});
+
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () {
   headerShadow();
