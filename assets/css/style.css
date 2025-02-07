@@ -78,7 +78,22 @@ i{
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
+    filter:blur(10px);
+    opacity:0;
+    animation:blurToClear 0.5 ease-out forwards;
 }
+
+@keyframes blurToClear {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 .container{
     width: 100%;
     position: relative;
