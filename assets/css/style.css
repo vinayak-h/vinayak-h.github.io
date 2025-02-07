@@ -221,7 +221,7 @@ nav{
     align-items: center;
     width: 50px; /* Adjust size */
     height: 50px; /* Adjust size */
-    background: var(--text-color-third); /* Accent color background */
+    background: #008cff; /* Accent color background */
     color: var(--color-white); /* Icon color */
     border-radius: 50%; /* Round background */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
