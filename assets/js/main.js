@@ -73,20 +73,20 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
-  duration: 2000,
+  duration: 1000,
   reset: true,
 });
 
 /* -- HOME -- */
 sr.reveal(".featured-text-card", {});
-sr.reveal(".featured-name", { delay: 100 });
-sr.reveal(".featured-text-info", { delay: 200 });
-sr.reveal(".featured-text-btn", { delay: 200 });
-sr.reveal(".social_icons", { delay: 200 });
+sr.reveal(".featured-name", { delay: 80 });
+sr.reveal(".featured-text-info", { delay: 80 });
+sr.reveal(".featured-text-btn", { delay: 80 });
+sr.reveal(".social_icons", { delay: 80 });
 sr.reveal(".featured-image", { delay: 300 });
 
 /* -- PROJECT BOX -- */
-sr.reveal(".project-box", { interval: 200 });
+sr.reveal(".project-box", { interval: 80 });
 
 /* -- HEADINGS -- */
 sr.reveal(".top-header", {});
@@ -97,23 +97,23 @@ sr.reveal(".top-header", {});
 const srLeft = ScrollReveal({
   origin: "left",
   distance: "80px",
-  duration: 2000,
+  duration: 1000,
   reset: true,
 });
 
-srLeft.reveal(".about-info", { delay: 100 });
-srLeft.reveal(".contact-info", { delay: 100 });
+srLeft.reveal(".about-info", { delay: 80 });
+srLeft.reveal(".contact-info", { delay: 80 });
 
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
   origin: "right",
   distance: "80px",
-  duration: 2000,
+  duration: 1000,
   reset: true,
 });
 
-srRight.reveal(".skills-box", { delay: 100 });
-srRight.reveal(".form-control", { delay: 100 });
+srRight.reveal(".skills-box", { delay: 80 });
+srRight.reveal(".form-control", { delay: 80 });
 
 /* ----- CHANGE ACTIVE LINK ----- */
 
