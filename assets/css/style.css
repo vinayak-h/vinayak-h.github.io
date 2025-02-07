@@ -3,20 +3,21 @@
 
 /* ----- VARIABLES ----- */
 :root {
-    /* Dark theme colors */
-    --body-color: rgba(0, 0, 0, 0.87); /* Dark background color */
+    /* Light theme colors */
+    --body-color: rgb(255, 255, 255); /* White background */
     --color-white: rgb(255, 255, 255);
 
-    --text-color-second: rgb(200, 200, 200); /* Lighter text for dark theme */
-    --text-color-third: rgb(30, 159, 171); /* You can leave this or change it */
+    /* Text colors for light theme */
+    --text-color-second: rgb(50, 50, 50); /* Darker text for light background */
+    --text-color-third: rgb(0, 123, 136); /* Accent text color */
     
-    /* Modify other colors if needed */
+    /* Primary and secondary colors */
     --first-color: rgb(110, 87, 224);
     --first-color-hover: rgb(40, 91, 212);
 
     --second-color: rgb(0, 201, 255);
     --third-color: rgb(192, 166, 49);
-    --first-shadow-color: rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
+    --first-shadow-color: rgba(0, 0, 0, 0.1); /* Subtle shadow for light theme */
 }
 
 /* ----- BASE ----- */
@@ -78,20 +79,6 @@ i{
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
-    filter:blur(10px);
-    opacity:0;
-    animation:blurToClear 0.5 ease-out forwards;
-}
-
-@keyframes blurToClear {
-  0% {
-    filter: blur(10px);
-    opacity: 0;
-  }
-  100% {
-    filter: blur(0);
-    opacity: 1;
-  }
 }
 
 .container{
