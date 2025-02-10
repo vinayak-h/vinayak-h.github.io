@@ -154,12 +154,12 @@ nav{
 
 /* ----- Dark Mode toggle ----- */
 /* Dark mode toggle styles */
-.dark-mode-toggle {
+/* .dark-mode-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 1rem;
-}
+} */
 
 /* The switch - the container */
 .switch {
