@@ -9,27 +9,27 @@ function myMenuFunction() {
   }
 }
 
-/* ----- Dark Mode Toggle ----- */
-// Select the toggle and the body element
-const darkModeToggle = document.getElementById("darkModeToggle");
-const body = document.body;
+// /* ----- Dark Mode Toggle ----- */
+// // Select the toggle and the body element
+// const darkModeToggle = document.getElementById("darkModeToggle");
+// const body = document.body;
 
-// Check if dark mode was previously enabled (using localStorage)
-if (localStorage.getItem("dark-mode") === "enabled") {
-    body.classList.add("dark-mode");
-    darkModeToggle.checked = true; // Keep the toggle on
-}
+// // Check if dark mode was previously enabled (using localStorage)
+// if (localStorage.getItem("dark-mode") === "enabled") {
+//     body.classList.add("dark-mode");
+//     darkModeToggle.checked = true; // Keep the toggle on
+// }
 
-// Add event listener to the toggle
-darkModeToggle.addEventListener("change", () => {
-    if (darkModeToggle.checked) {
-        body.classList.add("dark-mode");
-        localStorage.setItem("dark-mode", "enabled"); // Save preference
-    } else {
-        body.classList.remove("dark-mode");
-        localStorage.setItem("dark-mode", "disabled"); // Save preference
-    }
-});
+// // Add event listener to the toggle
+// darkModeToggle.addEventListener("change", () => {
+//     if (darkModeToggle.checked) {
+//         body.classList.add("dark-mode");
+//         localStorage.setItem("dark-mode", "enabled"); // Save preference
+//     } else {
+//         body.classList.remove("dark-mode");
+//         localStorage.setItem("dark-mode", "disabled"); // Save preference
+//     }
+// });
 
 
 
